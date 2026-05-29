@@ -3,29 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Automazione Contenuti Professionali</title>
+    <title>Automazione Contenuti AI per Professionisti</title>
     <style>
-        :root { --bg: #0d0d0d; --text: #e0e0e0; --accent: #00ffcc; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); max-width: 600px; margin: 0 auto; padding: 20px; line-height: 1.6; }
-        h1 { color: #fff; font-size: 1.8rem; border-bottom: 2px solid var(--accent); padding-bottom: 10px; margin-top: 40px; }
-        .box { background: #1a1a1a; padding: 20px; border-radius: 8px; margin-top: 20px; border: 1px solid #333; }
-        input, textarea, button { width: 100%; padding: 12px; margin-top: 10px; border-radius: 4px; border: 1px solid #444; background: #222; color: #fff; box-sizing: border-box; }
-        button { background: var(--accent); color: #0d0d0d; font-weight: bold; border: none; cursor: pointer; margin-top: 20px; font-size: 1rem; }
-        footer { margin-top: 60px; text-align: center; font-size: 0.8rem; color: #666; }
+        :root { --bg: #0d0d0d; --text: #e0e0e0; --accent: #00ffcc; --card: #161616; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); max-width: 600px; margin: 0 auto; padding: 24px; line-height: 1.6; }
+        h1 { color: #fff; font-size: 2rem; border-bottom: 2px solid var(--accent); padding-bottom: 12px; margin-top: 20px; font-weight: 800; letter-spacing: -0.5px; }
+        p { color: #aaa; font-size: 1.05rem; }
+        .highlight { color: var(--accent); font-weight: bold; }
+        .box { background: var(--card); padding: 24px; border-radius: 12px; margin-top: 30px; border: 1px solid #262626; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
+        h3 { margin-top: 0; color: #fff; font-size: 1.3rem; }
+        label { display: block; margin-top: 16px; color: #fff; font-size: 0.9rem; font-weight: 600; }
+        input, textarea { width: 100%; padding: 14px; margin-top: 6px; border-radius: 6px; border: 1px solid #333; background: #0f0f0f; color: #fff; box-sizing: border-box; font-size: 1rem; transition: border 0.3s; }
+        input:focus, textarea:focus { border-color: var(--accent); outline: none; }
+        button { width: 100%; background: var(--accent); color: #0d0d0d; font-weight: bold; border: none; cursor: pointer; margin-top: 24px; padding: 16px; border-radius: 6px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.5px; transition: transform 0.1s, background 0.3s; }
+        button:active { transform: scale(0.98); }
+        footer { margin-top: 80px; text-align: center; font-size: 0.8rem; color: #444; border-top: 1px solid #1a1a1a; padding-top: 20px; }
     </style>
 </head>
 <body>
-    <h1>Generazione Contenuti per Professionisti</h1>
-    <p>Liberiamo il tuo tempo. Scriviamo la tua newsletter, i tuoi post social e i tuoi testi aziendali usando intelligenza artificiale avanzata.</p>
+
+    <h1>Liberiamo il tuo tempo.</h1>
+    <p>Scriviamo la tua newsletter, i tuoi post social e i tuoi testi aziendali sfruttando i modelli di <span class="highlight">Intelligenza Artificiale Generativa</span> tarati esattamente sul tuo settore professionale.</p>
+    
+    <p>Zero software da imparare, zero ore perse a scrivere. Ci occupiamo di tutto noi, lasciandoti libero di fatturare.</p>
+
     <div class="box">
-        <h3>Richiedi una prova gratuita</h3>
-        <form>
-            <input type="email" placeholder="La tua Email" required>
-            <input type="text" placeholder="Il tuo Settore (es. Avvocato, Immobiliare)" required>
-            <textarea rows="4" placeholder="Di quali contenuti hai bisogno?" required></textarea>
-            <button type="button">Invia Richiesta (Attivazione in corso)</button>
+        <h3>Richiedi una Prova Gratuita</h3>
+        <p style="font-size: 0.9rem; margin-bottom: 15px;">Inserisci i tuoi dati: scriveremo un testo pilota per la tua attività senza alcun impegno.</p>
+        
+        <form action="INCOLLA_QUI_IL_TUO_ENDPOINT_DI_FORMSPREE" method="POST">
+            <label for="email">La tua Email di Contatto:</label>
+            <input type="email" id="email" name="email" required placeholder="es. avvocato@studio.it">
+
+            <label for="settore">Il tuo Settore / Attività:</label>
+            <input type="text" id="settore" name="settore" required placeholder="es. Agenzia Immobiliare, Consulente...">
+
+            <label for="esigenza">Quali testi hai bisogno di generare?</label>
+            <textarea id="esigenza" name="esigenza" rows="4" required placeholder="es. Post settimanali per LinkedIn, Newsletter per i clienti..."></textarea>
+
+            <button type="submit">Invia Richiesta</button>
         </form>
     </div>
-    <footer>Architettura Q7 - Linea di Produzione Attiva</footer>
+
+    <footer>Architettura Operativa Q7 — Connessione Sicura H24</footer>
+
 </body>
 </html>
